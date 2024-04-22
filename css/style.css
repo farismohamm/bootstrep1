@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 5000px;
+}
+
+
+.toggle {
+  width: 70px;
+  height: 30px;
+  border: 0.1px solid #ffff;
+  border-radius: 100px;
+  background-color: #f0edf1;
+  box-shadow: inset 10px 10px 15px#a7aaaf, inset -10px -10px 15px #ffff;
+  position: relative;
+}
+
+.toggle .icon {
+  width: 26px;
+  height: 27px;
+  margin: 1px;
+  border-radius: 100px;
+  box-shadow: 0px 0px 0px 1px #f0edf1, 1px 1px 3px #a7aaaf;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  transition: all 0.4px;
+}
+
+.toggle .moon {
+  opacity: 0;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 100px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.toggle input:checked+label .moon {
+  opacity: 1;
+}
+
+.toggle input:checked+label .sun {
+  opacity: 0;
+}
+
+.toggle input:checked+label .icon {
+  transform: translateX(40px) rotate(260deg);
+}
+
+.section-padding {
+  padding: 100px 0;
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+}
+
+.carousel-caption {
+  bottom: 20px;
+  z-index: 2;
+}
+
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
+}
+
+.carousel-caption p {
+  width: 60%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
+}
+
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.navbar-nav a {
+  font-style: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.navbar-light .navbar-brand {
+  color: #000;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+  color: #000;
+}
+
+.navbar-light .navbar-nav .navbar-link {
+  color: #000;
+}
+
+.w-100 {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 760px) and (max-width: 991px) {
+  .carousel-caption {
+    bottom: 33%;
+  }
+
+  .rs {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1570px) {
+  .carousel-caption {
+    bottom: 30%;
+  }
+
+  .navbar-brand {
+    text-align: center;
+  }
+
+  .carousel-caption h5 {
+    font-size: 47px;
+    width: 100%;
+  }
+
+  .carousel-caption a {
+    padding: 10px 15px;
+  }
+
+  .carousel-caption p {
+    width: 60%;
+    line-height: 1.6;
+    font-style: 32px;
+  }
+}
+
+@media only screen and (max-width: 767x) and (max-width: 554px) {
+  .navbar-brand {
+    text-align: center;
+  }
+
+  .carousel-caption {
+    bottom: 180px;
+  }
+
+  .carousel-caption h5 {
+    font-size: 17px;
+  }
+
+  .carousel-caption a {
+    padding: 10px 15px;
+  }
+
+  .carousel-caption p {
+    width: 100%;
+    line-height: 1.6;
+    font-style: 12px;
+  }
+
+  .rs {
+    margin: auto;
+  }
+}
+
+
+@media only screen and (max-width: 522px) {
+  .navbar-brand {
+    text-align: center;
+  }
+
+  .carousel-caption {
+    bottom: 33%;
+  }
+
+  .carousel-caption h5 {
+    font-size: 20px;
+    width: 100%;
+  }
+
+  .carousel-caption a {
+    padding: 10px 15px;
+  }
+
+  .carousel-caption p {
+    width: 100%;
+    line-height: 1.6;
+    font-size: 12px;
+  }
+
+  .rs {
+    margin: auto;
+  }
+}
+
+.btn btn-warning {
+  padding: var(--bs-popover-body-padding-y) var(--bs-popover-body-padding-x);
+}
+
+.img-fexad {
+  margin-top: 10px;
+  background-image: url(../project-1-img/istockphoto-639414496-612x612.jpg);
+  width: 100%;
+  height: 270px;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 1500px) {
+  .img-op {
+    margin: 0px 20px;
+  }
+
+  .card {
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+@media only screen and (max-width: 1100px) and (max-width: 1500px) {
+  .img-po {
+    margin: auto;
+  }
+
+  .rs {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 470px) and (max-width: 770px) {
+  .card {
+    margin: auto;
+    margin-bottom: 30px;
+  }
+
+  .img-op {
+    margin: auto;
+  }
+
+  .car p {
+    max-height: 1000px;
+
+
+  }
+
+  .rs {
+    margin: auto;
+  }
+
+}
+
+.row {
+  position: relative;
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 239, 10, 0.2);
+  opacity: 0;
+  transition: .5s;
+}
+
+.card:hover::after {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+
+  transition: 2s;
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 217, 3, 0.2);
+  opacity: 0;
+  transition: .5s;
+}
+
+.card:hover::before {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+
+  transition: 2s;
+}
+
+.img-fxed {
+  margin-top: 10px;
+  background-image: url(../project-1-img/istockphoto-589538090-612x612.jpg);
+  width: 100%;
+  height: 270px;
+  background-size: cover;
+  background-attachment: fixed;
+  border-radius: 10px;
+}
+
+.card-bottom {
+
+  padding: 30% 20px;
+}
+
+.img-over {
+  background-image: url(../project-1-img/WhatsApp\ Image\ 2024-02-21\ at\ 11.03.27_a5862811.jpg);
+  width: 340px;
+  height: 370px;
+  background-size: cover;
+  background-color: #000;
+
+
+}
+
+.img-over-2 {
+  background-image: url(../project-1-img/WhatsApp\ Image\ 2024-02-21\ at\ 11.03.26_4a237552.jpg);
+  width: 340px;
+  height: 370px;
+  background-size: cover;
+  background-color: #000;
+
+}
+
+.img-over-3 {
+  background-image: url(../project-1-img/23.jpg);
+  width: 340px;
+  height: 370px;
+  background-size: cover;
+  background-color: #000;
+}
+
+.card-img {
+  width: 100%;
+  height: 100%;
+  background: rgba(227, 231, 0, 0.5);
+  border-radius: 8px;
+  color: #000;
+}
+
+.card-img h1 {
+  color: #f0edf1;
+}
+
+.card-img:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: aliceblue;
+}
+
+.card-img:hover h1 {
+  color: rgb(255, 230, 0);
+}
+
+.img-over:hover {
+  transform: scale(0.9, 0.9);
+}
+
+.car:hover .img-fluid {
+  transform: scale(1.1);
+
+}
+
+.progress {
+  width: 30vh;
+  transition: 2s;
+}
+
+.car:hover .progress {
+  width: 70%;
+
+}
+
+.Facebook ul li {
+  display: block;
+  margin: 10px;
+  background: rgba(171, 219, 209, 0.36);
+  width: 400px;
+  text-align: left;
+  padding: 5px;
+  border-radius: 30px 0 0 30px;
+  transition: all 1s;
+}
+
+.Facebook ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.Facebook ul li a i {
+
+  color: rgb(232, 248, 13);
+  font-size: 40px;
+  margin-left: 5px;
+}
+
+.Facebook ul li span {
+  margin-left: 8px;
+}
+
+.h5:hover {
+  color: #000;
+}
+
+.text-decoration-none:hover ul li a {
+  color: rgb(255, 238, 0);
+}
